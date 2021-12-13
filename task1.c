@@ -183,7 +183,7 @@ void pushIgnoreOver(Address a){
     if(q.size == 10){
         removeFirst();
     }
-    q.array[9] = a;
+    q.array[q.size] = a;
     q.size++;
 }
 
