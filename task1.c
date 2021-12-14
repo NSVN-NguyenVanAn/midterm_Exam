@@ -258,17 +258,22 @@ int main(){
                 break;
             }
             case 4:{
-                printf("element 10th BEFORE push: \n");
+                printf("Nguoi thu 10 truoc khi them: \n");
                 printf("%s\n %s%s\n", q.array[9].name, q.array[9].phone, q.array[9].email);
-                printf("element 10th AFTER push: \n");
                 Address a1;
-                strcpy(a1.name, "11-th element");
-                strcpy(a1.phone , "03929932");
-                strcpy(a1.email,  "google.com@gmail");
-                pushIgnoreOver(a1);
+                printf("Them nguoi thu 11: \n");
+            	    printf("ten :");
+					scanf("%s", a1.name);
+					printf("so dien thoai:");
+					scanf("%s", a1.phone);
+					printf("email:");
+					scanf("%s", a1.email);
+					pushIgnoreOver(a1);
+				printf("\nNguoi thu 10 sau khi them khi them: \n");	
                 printf("%s\n%s\n%s\n", q.array[9].name, q.array[9].phone, q.array[9].email);
                 break;
             }
+            	
             default: return;
         }
     }
